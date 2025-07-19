@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>MIKI MENU v1.0</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="menu">
+    <h1>MIKI MENU v1.0</h1>
+    <label><input type="checkbox" id="aimbot"> เปิดดูดหัว</label><br><br>
+    <p>เลือกระดับยิงหัว</p>
+    <select id="aimLevel">
+      <option value="low">LOW = ต่ำ</option>
+      <option value="mid">MID = กลาง</option>
+      <option value="high">HIGH = สูง</option>
+    </select><br><br>
+    <p>เลือกโหมดที่เล่น</p>
+    <select id="mode">
+      <option value="1-1">1-1</option>
+      <option value="2-2">2-2</option>
+      <option value="3-3">3-3</option>
+    </select><br><br>
+    <label><input type="checkbox" id="accuracy"> กระสุนตรง 44%</label><br>
+    <label><input type="checkbox" id="assist" checked> ช่วยลาก 80%</label><br>
+    <label><input type="checkbox" id="speedup"> เพิ่มจอไว 40%</label><br>
+    <label><input type="checkbox" id="responsive" checked> ตอบสนองไวขึ้น</label><br>
+    <label><input type="checkbox" id="antiban" checked> กันแบน - กันดำ - กันรายงาน</label><br><br>
+    <p>ปรับความไวการลากหัว</p>
+    <input type="range" id="sensitivity" min="0" max="100" value="50">
+    <span id="sensitivityValue">50</span>%
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
